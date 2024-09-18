@@ -5,7 +5,7 @@ const app = express();
 const port = 80;
 const directoryPath = path.join(__dirname,"Resources"); // 设置为当前目录
 
-app.get('/', (req, res) => {
+app.get('/R', (req, res) => {
   fs.readdir(directoryPath, (err, files) => {
     if (err) {
       res.status(500).send('Error reading the directory');
